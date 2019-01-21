@@ -4,26 +4,7 @@
     font-weight: 100;
 }
 
-.quote {
-    background: rgba(177, 177, 177, 0.459);
-    color: #000;
-    font-weight: 1000;
-    padding: 10px;
-    
-}
-
-header h1 {
-    text-align: center;
-    font-size: 45px;
-    padding: 55px 10px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    color: #000;
-}
-
-
 body {
-    background: white;
     color: #000;
     font-family: 'Work Sans', sans-serif;
     font-style: normal;
@@ -31,66 +12,85 @@ body {
     font-weight: 100;
     margin: 0;
     padding: 0;
+    height: 100%;
+    min-height: 100%;
 }
 
-.container {
+.fullContainer1, .fullContainer2, .fullContainer3 {
+    overflow: auto;
+    padding-bottom: 20px;
+}
+
+.container, .container2, .container3 {
+    background: rgba(0, 0, 0, 0.753);
+    padding: 0;
+    margin: 0;
+    position: fixed;
     width: 100%;
-    margin: auto;
 }
 
-.box-1 {    
-    padding: 70px 120px;
-    font-size: 27px;
-    text-align: left;
-    max-width: 740px;
-    line-height: 1.5;
+header {
+    width: 100%;
+    height: 100vh;
+    background: url(/images/backgroundMountain.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.header-main h1 {
+    text-align: center;
+    font-size: 60px;
+    padding: 250px 0 0 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #000;
+}
+
+.pages2 li {
+    display: inline-block;
+    padding: 10px 15px;
+}
+
+.pages2 a {
+    font-family: 'Work Sans', sans-serif;
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(219, 219, 219);
+    margin: 0px;
+    padding: 5 2px 2px 0px;
+    border-style: none;
+}
+
+.pages2 li a:hover {
+    color: rgb(213, 216, 31);
+    transition: .2s;
+}
+
+.container li:nth-child(1) a {
+    color: rgb(135, 209, 66);
+   
+}
+
+.container2 li:nth-child(2) a {
+    color: rgb(135, 209, 66);
+   
+}
+
+.container3 li:nth-child(3) a {
+    color: rgb(135, 209, 66);
+   
 }
 
 .box-2 {    
-    padding: 0 300px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 27px;
     text-align: center;
 }
 
-.pages1 ul li {
-    
-    display: inline-block;
-    padding: 40px 20px;
-}
-
-.pages1 ul li a {
-    font-family: 'Work Sans', sans-serif;
-    text-decoration: none;
-    font-size: 18px;
+.box-2 p {
     color: #000;
-    margin: 20px;
-    padding: 5px;
-    border-style: none;
-    
-}
-
-.pages1 ul li:first-child a {
-    color: rgb(0, 182, 228);
-}
-
-.pages2 ul li {
-    
-    display: inline-block;
-    padding: 40px 20px;
-}
-
-.pages2 ul li a {
-    font-family: 'Work Sans', sans-serif;
-    text-decoration: none;
-    font-size: 18px;
-    color: #000;
-    margin: 20px;
-    padding: 5px;
-    border-style: none;
-}
-
-.pages2 ul li:nth-child(2) a {
-    color: rgb(0, 182, 228);
 }
 
 p a {
@@ -99,17 +99,49 @@ p a {
 }
 
 p a:active{
-    color: rgb(0, 189, 85);
+    color: rgb(0, 255, 115);
 }
 
 p a:visited{
-	color: rgb(0, 189, 85);
+	color: rgb(0, 255, 115);
 }
 
-ul {
+
+.main-footer {
+    position: relative;;
+    height:80px;
+    margin: 0;
+    padding: 20px 0 0 0;   
+    color: rgb(219, 219, 219);
+    background: rgb(0, 0, 0);
+    clear: both;
+    overflow: auto;
+}
+
+.media-box {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.media-box div {
+    padding: 0 10px 0 10px;
+}
+
+
+.mediaLinks {
+    list-style-type: none;
     text-align: right;
     margin: 0;
     padding: 0;
     list-style-type: none;
 }
+
+.mediaLinks li {
+    display: inline-block;
+    padding: 0px 12px;
+    margin: 5px;
+}
+
+
 
